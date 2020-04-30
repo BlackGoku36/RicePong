@@ -1,0 +1,80 @@
+{
+    "name":"PongScene",
+    "assets":[
+        {
+            "name": "font",
+            "type": 1
+        }
+    ],
+    "scripts":[
+        {
+            "name": "Walls",
+            "scriptRef": "Walls"
+        },
+        {
+            "name": "Scoreborad",
+            "scriptRef": "Scoreborad"
+        }
+    ],
+    "objects":[
+        {
+            "name": "wallTop",
+            "x":0, "y":0,
+            "width":0, "height":5
+        },
+        {
+            "name": "wallBottom",
+            "x":0, "y":0,
+            "width":0, "height":5
+        },
+        {
+            "name": "wallRight",
+            "x":0, "y":0,
+            "width":5, "height":0
+        },
+        {
+            "name": "wallLeft",
+            "x":0, "y":0,
+            "width":5, "height":0
+        },
+        {
+            "name": "player1",
+            "x":10,
+            "y":10,
+            "width":10,
+            "height":100,
+            "scripts": [
+                {
+                    "name":"PaddleController",
+                    "scriptRef":"PaddleController"
+                }
+            ]
+        },
+        {
+            "name": "player2",
+            "x":10,
+            "y":10,
+            "width":10,
+            "height":100,
+            "scripts": [
+                {
+                    "name":"PaddleController",
+                    "scriptRef":"PaddleController"
+                }
+            ]
+        },
+        {
+            "name": "ball",
+            "x":10,
+            "y":10,
+            "width":10,
+            "height":10,
+            "scripts": [
+                {
+                    "name":"BallController",
+                    "scriptRef":"BallController"
+                }
+            ]
+        }
+    ]
+}
